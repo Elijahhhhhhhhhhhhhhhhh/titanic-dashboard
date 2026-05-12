@@ -5,7 +5,7 @@ import plotly.express as px
 st.set_page_config(page_title='Sales Dashboard', layout='wide')
 st.title('Sales Dashboard')
 
-df = pd.read_csv(r'C:\Users\Bobby\Downloads\Python\Sample - Superstore.csv', encoding='latin1')
+df = pd.read_csv('Sample - Superstore.csv', encoding='latin1')
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 
 # Sidebar filters
