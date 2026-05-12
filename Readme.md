@@ -2,7 +2,7 @@
 
 An interactive data dashboard exploring survival patterns from the Titanic dataset.
 
-#Live Demo
+# Live Demo
 [View the dashboard](https://titanic-dashboard-gl66radh6nqdsnqnz2alhq.streamlit.app)
 
 # What it does
