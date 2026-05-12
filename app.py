@@ -6,7 +6,7 @@ st.set_page_config(page_title='Titanic Dashboard', layout='wide')
 st.title('Titanic Survival Dashboard')
 st.write('Exploring survival patterns from the Titanic dataset.')
 
-df = pd.read_csv(r'C:\Users\Bobby\Downloads\Titanic-Dataset.csv')
+df = pd.read_csv('Titanic-Dataset.csv')
 df = df.drop(columns=['Cabin'])
 df = df.assign(Age=df['Age'].fillna(df['Age'].median()))
 df = df.assign(Embarked=df['Embarked'].fillna(df['Embarked'].mode()[0]))
