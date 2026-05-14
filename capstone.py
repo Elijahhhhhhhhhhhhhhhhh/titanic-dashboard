@@ -9,7 +9,7 @@ st.title('📊 Customer Sales Analytics Dashboard')
 st.markdown('Track revenue, customers, and product performance in real time.')
 
 # Load data
-df = pd.read_csv(r'C:\Users\Bobby\Downloads\Python\Sample - Superstore.csv', encoding='latin1')
+df = pd.read_csv('Sample - Superstore.csv', encoding='latin1')
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 df['Year'] = df['Order Date'].dt.year
 df['Month'] = df['Order Date'].dt.month_name()
